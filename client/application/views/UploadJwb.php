@@ -35,7 +35,7 @@
         }
         .nav .nav-link{
         border-radius: 30px;
-        height: 56px;
+        height: 46px;
         margin-top: 40px;
         }
         .nav-pills .nav-link{
@@ -47,9 +47,13 @@
         .nav-pills .nav-link.active{
         background: #fff;
         color: #000;
+        top:10px;
         }
         .new{
             margin-left: 350px;
+        }
+        .header{
+        position: fixed;
         }
         .user{
         position: fixed;
@@ -60,7 +64,7 @@
         height: 45px;
         float: right;
         margin-left: 1060px;
-        margin-top: -55px;
+        margin-top: -45px;
 
         }
       .button{
@@ -85,10 +89,10 @@
             height: 540px;
             box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.15);
             border-radius: 30px;
-            margin-top:40px;
+            margin-top:70px;
         }
         .box-1{
-          margin-top:40px; 
+          margin-top:60px; 
         }
         table{
             margin-top : 50px;
@@ -156,13 +160,14 @@
 </head>
 <body>
     <!-- Nav pills -->
+<div class="header">
   <div class="new">
         <ul class="nav nav-pills" role="tablist">
             <li class="nav-item">
-            <a class="nav-link active" data-toggle="pill" href="#home">Praktikan</a>
+            <a class="nav-link active" data-toggle="pill" href="#home">Upload Jawaban</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" data-toggle="pill" href="#menu1">Asprak</a>
+            <a class="nav-link" data-toggle="pill" href="#menu1">History Jawaban</a>
             </li>
         </ul>
     </div>
@@ -170,6 +175,7 @@
             Anasya Wulandari
             <span class="ml-3"><img src="assets/image/user.png" ></span>
      </div>
+</div>
     <div class="row">
         <div class="box">
             <div class="col align-self-center ">
