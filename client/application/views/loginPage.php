@@ -109,7 +109,7 @@
         }
     }
     .login{
-        
+
         float: right;
         margin-right: 5%;
         margin-top: 170px;
@@ -181,7 +181,7 @@
                     <label for="psw"><b>Password</b></label>
                     <input type="password" placeholder="Masukkan Password" name="psw" required>
 
-                    <button type="submit" class="btn btn-sm btnlogin">Login</button>
+                    <button type="submit" class="btn btn-sm btnlogin" href="<?php echo base_url().'C_Home'; ?>">Login</button>
             </form>
         </div>
         <div id="menu1" class="container tab-pane fade"><br>
@@ -192,7 +192,7 @@
                     <label for="psw"><b>Password</b></label>
                     <input type="password" placeholder="Masukkan Password" name="psw" required>
 
-                    <button type="submit" class="btn btn-sm btnlogin">Login</button>
+                    <button type="submit" class="btn btn-sm btnlogin" href="<?php echo base_url().'C_Home'; ?>">Login</button>
             </form>
         </div>
     </div>
@@ -202,8 +202,8 @@
 
     <div id="rectangle">
     </div>
-    
-    
+
+
 
 </body>
 
