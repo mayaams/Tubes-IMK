@@ -22,4 +22,8 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('loginPage');
 	}
+	public function jadwal()
+	{
+		$this->load->view('jadwal');
+	}
 }

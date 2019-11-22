@@ -28,11 +28,10 @@
 <!-- stylesheet -->
 <style>
     body {
-        position: relative;
-        width: 1440px;
-        height: 831px;
-        background: linear-gradient(269.31deg, #C4C4C4 0.27%, #FFFFFF 99.59%);
-        ;
+        background: url(assets/image/backgroundLogin.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: 0 -70px;
     }
 
     #logoIF {
@@ -44,9 +43,9 @@
     }
 
     #rectangle {
-        position: absolute;
+        position: fixed;
         width: 64px;
-        height: 969px;
+        height: 1000px;
         left: 0px;
         top: 0px;
 
@@ -67,22 +66,12 @@
     input[type=text],
     input[type=password] {
         width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
         display: inline-block;
         border: 1px solid #ccc;
         box-sizing: border-box;
-    }
-
-    /* Set a style for all buttons */
-    button {
-        background-color: #4CAF50;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        cursor: pointer;
-        width: 100%;
+        border-radius: 20px;
+        padding: 5px;
+        margin-bottom: 8px;
     }
 
     /* Add a hover effect for buttons */
@@ -119,35 +108,102 @@
             width: 100%;
         }
     }
+    .login{
+        
+        float: right;
+        margin-right: 5%;
+        margin-top: 170px;
+    }
+    .btnlogin{
+        float: right;
+        border-radius: 30px;
+        width: 90px;
+        margin-top: 10px;
+        background : #5088CA;
+        font-weight : bold;
+    }
+
+    .nav-pills{
+  width: 450px;
+}
+.nav-item{
+  width: 50%;
+}
+.nav .nav-link{
+  border-radius: 30px;
+  height: 100px;
+}
+.nav-pills .nav-link{
+  font-weight: bold;
+  text-align: center;
+  background: #343436;
+  color: #fff;
+}
+.nav-pills .nav-link.active{
+  background: #fff;
+  color: #000;
+}
+.tab-content{
+  position: absolute;
+  width: 450px;
+  height: 300px;
+  margin-top: -60px;
+  background: #fff;
+  color: #000;
+  border-radius: 30px;
+  z-index: 1000;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+  padding : 15px;
+}
 </style>
 
 <body>
+<div class="container">
+  <div class="content">
+  <!-- Nav pills -->
+  <div class="login">
+    <ul class="nav nav-pills" role="tablist">
+        <li class="nav-item">
+        <a class="nav-link active" data-toggle="pill" href="#home">Praktikan</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#menu1">Asprak</a>
+        </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div id="home" class="container tab-pane active"><br>
+        <form action="action_page.php" method="post">
+                    <label for="uname"><b>NIM</b></label>
+                    <input type="text" placeholder="Masukkan NIM" name="uname" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Masukkan Password" name="psw" required>
+
+                    <button type="submit" class="btn btn-sm btnlogin">Login</button>
+            </form>
+        </div>
+        <div id="menu1" class="container tab-pane fade"><br>
+        <form action="action_page.php" method="post">
+                    <label for="uname"><b>NIM</b></label>
+                    <input type="text" placeholder="Masukkan NIM" name="uname" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Masukkan Password" name="psw" required>
+
+                    <button type="submit" class="btn btn-sm btnlogin">Login</button>
+            </form>
+        </div>
+    </div>
+    </div>
+  </div>
+</div>
+
     <div id="rectangle">
     </div>
-
-    <img id="logoIF" src="assets/image/logoIFLAB.png" alt="logo IFLAB">
-
-    <div class="container-form" style="width: 500px">
-        <form action="action_page.php" method="post">
-            <div class="container">
-                <label for="uname"><b>NIM</b></label>
-                <input type="text" placeholder="Masukkan NIM" name="uname" required>
-
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Masukkan Password" name="psw" required>
-
-                <button type="submit">Login</button>
-                <label>
-                    <input type="checkbox" checked="checked" name="remember"> Remember me
-                </label>
-            </div>
-
-            <div class="container" style="background-color:#f1f1f1">
-                <button type="button" class="cancelbtn">Cancel</button>
-                <span class="psw">Forgot <a href="#">password?</a></span>
-            </div>
-        </form>
-    </div>
+    
+    
 
 </body>
 
