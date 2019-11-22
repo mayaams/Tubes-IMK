@@ -23,7 +23,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
+<<<<<<< HEAD
 $config['base_url'] = 'http://localhost/Tubes-IMK/client';
+=======
+$config['base_url'] = 'http://localhost/Tubes-IMK/client/';
+>>>>>>> 64d70b77cb2f7c681716fd64fe96be3cd0509184
 
 /*
 |--------------------------------------------------------------------------
