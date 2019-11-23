@@ -18,8 +18,9 @@
 
     <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-    <!-- <link rel="stylesheet" href="assets/css/UploadJwb.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/UploadJwb.css"> -->    
+    <link href="<?=base_url()?>assets/fontawesome/css/all.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/upload.css">
     <style>
         body{
             background-color:#F3F2F2;
@@ -36,7 +37,7 @@
         .nav .nav-link{
         border-radius: 30px;
         height: 46px;
-        margin-top: 40px;
+        margin-top: 30px;
         }
         .nav-pills .nav-link{
         font-weight: bold;
@@ -47,10 +48,10 @@
         .nav-pills .nav-link.active{
         background: #fff;
         color: #000;
-        top:10px;
+        top:15px;
         }
         .new{
-            margin-left: 350px;
+            margin-left: 400px;
         }
         .header{
         position: fixed;
@@ -63,9 +64,8 @@
         width: 215px;
         height: 45px;
         float: right;
-        margin-left: 1060px;
-        margin-top: -45px;
-
+        margin-left: 1500px;
+        margin-top: -40px;
         }
       .button{
           width: 144px;
@@ -85,14 +85,29 @@
         }
         .box{
             background-color :  #fff;
-            width: 518px;
-            height: 540px;
+            width: 700px;
+            height: 689px;
             box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.15);
             border-radius: 30px;
             margin-top:70px;
         }
         .box-1{
-          margin-top:60px; 
+          margin-top:60px;
+          margin-right: 150px;
+        }
+        img{
+            width: 500px;
+            height:550px;  
+        }
+        .drpdwn{
+          background: #1e1e1e;
+          border-radius: 30px;
+          float:right;
+          font-family:'roboto',sans-serif;
+          margin-left:1550px;
+          margin-top:-50px;
+          width: 200px;
+          height: 48px;
         }
         table{
             margin-top : 50px;
@@ -112,13 +127,17 @@
             font-family:roboto;
             font-style: normal;
             font-weight: bold;
-            font-size: 24px;
+            font-size: 28px;
             line-height: 28px;
 
             color: #2D2D2F;
         }
         .mk{
             margin-left:30px;
+            font-size: 20px;
+            font-style:bold;
+            width: 280px;
+            height: 40px;
         }
         select{
             width: 230px;
@@ -133,8 +152,8 @@
             border-radius: 10px;
         }
         .kd{
-            width: 230px;
-            height: 30px;
+            width: 280px;
+            height: 40px;
             left: 641px;
             top: 364px;
             margin-left:30px;
@@ -154,7 +173,12 @@
          .user:hover{
              cursor: pointer;
          }
+         label{
+             font-size:20px;
+         }
          
+         
+
   </style>
     <title>UploadJawaban</title>
 </head>
@@ -171,10 +195,15 @@
             </li>
         </ul>
     </div>
-    <div class="alert container3 user text-white">
-            Anasya Wulandari
-            <span class="ml-3"><img src="assets/image/user.png" ></span>
-     </div>
+    <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle drpdwn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Anasya Wulandari<i class="fas fa-user"></i>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Profil</a>
+                <a class="dropdown-item" href="#">Logout</a>
+            </div>
+    </div>
 </div>
     <div class="row">
         <div class="box">
@@ -245,7 +274,7 @@
             </form>
         </div>
       </div>
-      <div class="box-1">
+      <div class="box-1" style="">
             <div class="col align-self-end">
             <img src="assets/image/ATURAN.png" alt="Avatar" class="image" >
             </div>
