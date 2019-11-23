@@ -11,6 +11,8 @@
 <!-- Stylesheets -->
 <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/nilai.css">
 <link href="https://canvasjs.com/assets/css/jquery-ui.1.11.2.min.css" rel="stylesheet" />
+<link href="<?= base_url() ?>assets/fontawesome/css/all.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="/css/all.min">
 
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Quicksand:400,600,700&display=swap" rel="stylesheet">
@@ -26,8 +28,11 @@
 <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
 <script src="https://canvasjs.com/assets/script/jquery-ui.1.11.2.min.js"></script>
 <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+<script src="<?php echo base_url(); ?>/assets/js/scrolling-nav.js"></script>
 
-<script>
+
+<script type="text/javascript">
+
     window.onload = function() {
 
         // Construct options first and then pass it as a parameter
@@ -66,7 +71,149 @@
     }
 </script>
 
+<style media="screen">
+/* NAVBAR */
+.section {
+  min-height: 800px;
+  position: relative;
+  text-align: center;
+  font-family: sans-serif, arial;
+  margin: 0;
+}
+
+h1, p {
+  margin: 0;
+  font-family: sans-serif, arial;
+  font-weight: bold;
+}
+
+.text-wr {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#section1 {
+  background: #5c53aa;
+  color: #8d86c3;
+}
+
+#section2 {
+  background: #4bbfc3;
+  color: #81d2d5;
+}
+
+#section3 {
+  background: #283044;
+  color: #686e7c;
+}
+
+#section4 {
+  background: #ebf5ee;
+  color: #aeb9b9;
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 25px;
+}
+
+.title-top {
+  font-size: 60px;
+  padding-bottom: 30px;
+}
+
+.title-bottom {
+  font-size: 30px;
+}
+
+.title-tx {
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+.nav {
+  margin-left: 40%;
+}
+
+.nav a {
+  padding: 7px 20px;
+  border-radius: 7px;
+  margin-right: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif, Roboto;
+  font-weight: 100;
+}
+
+.nav a.active {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.nav a:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.fork-wr img {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  border: 0;
+}
+
+</style>
+
 <body>
+
+    <!-- ini side bar -->
+    <div id="sidebar">
+        <h2>IMPULSE</h2>
+        <ul>
+            <img id="iconsiderbar" src="<?php echo base_url('/assets/image/home.png'); ?>" style="margin-left: -20px;">
+            <li><a href="#"><b>Home</b></a></li>
+            <img id="iconsiderbar" src="<?php echo base_url('/assets/image/nilai.png'); ?>" style="margin-left: -20px;">
+            <li><b>Nilai</b></li>
+            <img id="iconsiderbar" src="<?php echo base_url('/assets/image/upload.png'); ?>" style="margin-left: -20px;">
+            <li><b>Upload Jawaban</b></li>
+            <img id="iconsiderbar" src="<?php echo base_url('/assets/image/jadwal.png'); ?>" style="margin-left: -20px;">
+            <li><b>Jadwal</b></li>
+            <img id="iconsiderbar" src="<?php echo base_url('/assets/image/data.png'); ?>" style="margin-left: -20px;"">
+          <li><b>Data IFLAB</b></li>
+        </ul>
+    </div>
+
+    <!-- ini drop down -->
+    <div class=" dropdown">
+            <button class="btn btn-secondary dropdown-toggle drpdwn" type="button" id="dropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border-radius: 30px; height: 45px;width: 226px;">
+                Anasya Wulandari<span> <i class="fas fa-user"></i></span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Logout</a>
+
+            </div>
+    </div>
+
+    <!-- ini navbar -->
+    <div class="nav" style="margin-left: 400px; margin-top: 100px;">
+          <nav>
+              <a href="#conGrafikNilai">Grafik Nilai</a>
+              <a href="#conKeterangan">Keterangan</a>
+          </nav>
+      </div>
+
     <div class="dropdown" style="margin-top: 209px; margin-left: 470px">
         <span><b style="font-size: 18px;">Praktikum</b></span>
         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="">
@@ -77,6 +224,10 @@
             <a class="dropdown-item" href="#">Jaringan Komputer (JRK)</a>
         </div>
     </div>
+
+
+
+    <!-- ini bagian nilai -->
     <div class="container" id="conGrafikNilai" style="margin-top: 30px;">
         <br><br>
         <h4 style="margin-left: 70px;"><b>Grafik Nilai</b></h4>
@@ -86,53 +237,61 @@
         </div>
     </div>
 
-    <div class="container" id="conKeterangan">
-        <br><br>
-        <h4 style="margin-left: 70px;"><b>Keterangan</b></h4>
-        <br>
-        <table class="table table-hover">
-            <thead class="thead-dark">
-                <tr>
-                    <th scope="col">Modul</th>
-                    <th scope="col">Asisten Praktikum</th>
-                    <th scope="col">Tanggal</th>
-                    <th scope="col">Tes Awal</th>
-                    <th scope="col">Jurnal</th>
-                    <th scope="col">Tes Akhir</th>
-                    <th scope="col">Skill</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                    <td>@fat</td>
-                    <td>@fat</td>
-                    <td>@fat</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="tab-content" id="conKeterangan">
+        <div class="container">
+            <br><br>
+            <h4 style="margin-left: 70px;"><b>Keterangan</b></h4>
+            <br>
+            <table class="table table-hover" id="tabelNilai" style="width: 90%; margin: auto; text-align: center; border-radius: 30px;">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Modul</th>
+                        <th scope="col">Asisten Praktikum</th>
+                        <th scope="col">Tanggal</th>
+                        <th scope="col">Tes Awal</th>
+                        <th scope="col">Jurnal</th>
+                        <th scope="col">Tes Akhir</th>
+                        <th scope="col">Skill</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Yayan Prima</td>
+                        <td>19/09/2019</td>
+                        <td>10</td>
+                        <td>60</td>
+                        <td>5</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Yayan Prima</td>
+                        <td>26/09/2019</td>
+                        <td>10</td>
+                        <td>60</td>
+                        <td>5</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Yayan Prima</td>
+                        <td>03/10/2019</td>
+                        <td>10</td>
+                        <td>60</td>
+                        <td>5</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table><br><br>
+        </div>
     </div>
+    <script src="<?php echo base_url(); ?>/assets/js/slideNav.js" type="text/javascript"></script>
+    <script>
+	    window.slide = new SlideNav({
+		changeHash: true
+	    });
+    </script>
 
 </body>
 
