@@ -30,4 +30,8 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('sidebar');
 	}
+	public function profil()
+	{
+		$this->load->view('profil');
+	}
 }
