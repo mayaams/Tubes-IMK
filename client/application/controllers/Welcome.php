@@ -26,4 +26,8 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('jadwal');
 	}
+	public function sidebar()
+	{
+		$this->load->view('sidebar');
+	}
 }
