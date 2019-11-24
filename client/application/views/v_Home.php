@@ -89,7 +89,7 @@
           </div>
         </div>
         <div class="col-4 ml-5">
-          <img src="assets/image/man.png" >
+          <img src="assets/image/man.png">
         </div>
       </div>
     </div>

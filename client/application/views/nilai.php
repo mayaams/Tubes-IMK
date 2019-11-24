@@ -130,7 +130,7 @@
       <li><b>Upload Jawaban</b></li>
       <img id="iconsiderbar" src="<?php echo base_url('/assets/image/jadwal.png'); ?>" style="margin-left: -20px;">
       <li><b>Jadwal</b></li>
-      <img id="iconsiderbar" src="<?php echo base_url('/assets/image/data.png'); ?>" style="margin-left: -20px;"">
+      <img id="iconsiderbar" src="<?php echo base_url('/assets/image/data.png'); ?>" style="margin-left: -20px;">
           <li><b>Data IFLAB</b></li>
         </ul>
     </div>
