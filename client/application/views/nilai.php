@@ -114,9 +114,6 @@
     color: #353537 !important;
   }
 
-  /* .nav a:hover {
-  background: rgba(255, 255, 255, 0.7);
-} */
 </style>
 
 <body>
