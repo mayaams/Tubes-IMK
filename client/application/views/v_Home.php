@@ -30,39 +30,45 @@
       background-color: #F3F2F2;
       font-family: 'Roboto', sans-serif;
     }
+    .margin-nav{
+      margin-left: 265px;
+    }
     .container{
-      margin-left: 320px;
+      margin-left: 385px;
     }
     .container2{
-      margin-top: 235px;
-      margin-left: 400px;
+      margin-top: 140px;
+      margin-left: 350px;
+    }
+    .txt-14{
+      font-size: 12px;
     }
     .txt-50{
-      font-size: 50px;
+      font-size: 42px;
     }
     .txt-36{
-      font-size: 36px;
+      font-size: 25px;
     }
     .txt-18{
-      font-size: 18px;
+      font-size: 14px;
     }
     .txt-16{
-      font-size: 16px;
+      font-size: 12px;
     }
     .txt-25{
-      font-size: 25px;
+      font-size: 18px;
     }
     .btn-active{
       background: #4572A7;
       box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.15);
       border-radius: 30px;
-      width: 230px;
+      width: 170px;
     }
     .btn-nactive{
       background: #C4C4C4;
       box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.15);
       border-radius: 30px;
-      width: 230px;
+      width: 170px;
     }
     .txt-nactive{
       color: #C4C4C4;
@@ -73,6 +79,17 @@
       border-radius: 30px;
       width: 215px;
       height: 45px;
+    }
+    .img-size{
+      width: 250px;
+      height: 290px;
+    }
+    .btn-profil{
+      width: 150px;
+      height: 32px;
+      background: #353537;
+      border-radius: 15px;
+      margin-left: 840px;
     }
   </style>
   <body>
@@ -94,45 +111,52 @@
           </ul>
       </div>
 
-      <!-- ini drop down -->
-      <div class=" dropdown">
-        <button class="btn btn-secondary dropdown-toggle drpdwn" type="button" id="dropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border-radius: 30px; height: 45px;width: 226px;">
-          Anasya Wulandari<span> <i class="fas fa-user"></i></span>
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">Logout</a>
-
+      <!-- navbar start -->
+      <nav class="navbar navbar-expand-lg margin-nav mt-3">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown justify-content-end">
+              <button type="button" class="btn btn-secondary btn-profil txt-14" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Anasya Wulandari
+                <span> <i class="fas fa-user"></i></span>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Profil</a>
+                <a class="dropdown-item" href="#">Keluar</a>
+              </div>
+            </li>
+          </ul>
         </div>
-      </div>
+      </nav>
+      <!-- navbar end -->
 
     <!-- ini content -->
     <div class="container">
       <div class="container2 row mx-auto">
-        <div class="col-6 mr-5">
-          <div class="row mb-5">
-            <div class="col font-weight-bold mb-4">
+        <div class="col-5 mr-5">
+          <div class="row mb-3">
+            <div class="col font-weight-bold mb-2">
               <a class="txt-50">Selamat Datang</a> <br>
               <a class="txt-36">Anasya Wulandari</a> <br>
             </div>
             <img src="assets/image/line1.png" >
           </div>
           <div class="row">
-            <div class="col-sm font-weight-bold">
+            <div class="ml-3 font-weight-bold">
               <a class="txt-18">Praktikum</a> <br>
               <a class="txt-25">Pemrograman Web</a> <br>
               <a class="txt-16">Asisten:  Febiana Anistya</a> <br>
-              <button type="button" class="btn-active btn text-white mt-1">Mulai</button>
+              <button href="<?= base_url('index.php/MulaiPraktikum') ?>" type="button" class="btn-active btn btn-sm text-white mt-1">Mulai</button>
             </div>
-            <div class="col-sm font-weight-bold">
+            <div class="ml-4 font-weight-bold">
               <a class="txt-18 text-muted">Praktikum</a> <br>
               <a class="txt-25 text-muted">Struktur Data</a> <br>
               <a class="txt-16 text-muted">Asisten:  -</a> <br>
-              <button type="button" class="btn-nactive btn text-white mt-1">Mulai</button>
+              <button type="button" class="btn-nactive btn btn-sm text-white mt-1">Mulai</button>
             </div>
           </div>
         </div>
-        <div class="col-4 ml-5">
-          <img src="assets/image/man.png">
+        <div class=" ml-5">
+          <img class="img-size" src="assets/image/man.png">
         </div>
       </div>
     </div>
