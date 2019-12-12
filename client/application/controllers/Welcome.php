@@ -20,7 +20,7 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('loginPage');
+		$this->load->view('v_MulaiPraktikum');
 	}
 	public function jadwal()
 	{

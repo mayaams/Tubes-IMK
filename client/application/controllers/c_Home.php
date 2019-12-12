@@ -7,4 +7,10 @@ class C_Home extends CI_Controller {
 	{
 		$this->load->view('v_Home');
 	}
+
+	public function MulaiPraktikum()
+	{
+		$this->load->view('v_MulaiPraktikum');
+	}
+	
 }
