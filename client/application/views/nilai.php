@@ -81,26 +81,26 @@
 <style media="screen">
   /* NAVBAR */
   .nav {
-    margin-left: 390px;
+    margin-left: 350px;
     margin-top: 50px;
     background: #353537;
     box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.15);
     border-radius: 30px;
-    width: 257px;
-    height: 44px;
+    width: 180px;
+    height: 37px;
     position: fixed;
     z-index: 3;
   }
 
   .nav a {
-    padding: 13.7px 20px;
+    padding: 12px 10px;
     color: white;
     font-family: Roboto;
     font-style: normal;
     font-weight: 600;
     border-radius: 30px;
-    font-size: 17px;
-    line-height: 2.6;
+    font-size: 13px;
+    line-height: 2.9;
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     -ms-transition: all 0.2s ease-out;
@@ -113,7 +113,6 @@
     box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.1);
     color: #353537 !important;
   }
-
 </style>
 
 <body>
@@ -131,33 +130,33 @@
       <img id="iconsiderbar" src="<?php echo base_url('/assets/image/jadwal.png'); ?>" style="margin-left: -20px;">
       <li><b>Jadwal</b></li>
       <img id="iconsiderbar" src="<?php echo base_url('/assets/image/data.png'); ?>" style="margin-left: -20px;">
-          <li><b>Data IFLAB</b></li>
-        </ul>
+      <li><b>Data IFLAB</b></li>
+    </ul>
+  </div>
+
+  <!-- ini drop down -->
+  <div class=" dropdown">
+    <button class="btn btn-secondary dropdown-toggle drpdwn" type="button" id="dropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border-radius: 30px; height: 45px;width: 226px;">
+      Anasya Wulandari<span> <i class="fas fa-user"></i></span>
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">Logout</a>
+
     </div>
-
-    <!-- ini drop down -->
-    <div class=" dropdown">
-      <button class="btn btn-secondary dropdown-toggle drpdwn" type="button" id="dropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border-radius: 30px; height: 45px;width: 226px;">
-        Anasya Wulandari<span> <i class="fas fa-user"></i></span>
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#">Logout</a>
-
-      </div>
   </div>
 
   <!-- ini navbar -->
   <div class="nav">
     <nav>
       <a href="#bagianNilai">Grafik Nilai</a>
-      <a href="#conKeterangan">Keterangan</a>
+      <a href="#conKeterangan" style="margin-left: 3.5px">Keterangan</a>
     </nav>
   </div>
 
-  <div class="dropdown" id="bagianNilai" style="margin-left: 400px">
-    <br><br><br><br><br><br><br><br>
-    <span><b style="font-size: 18px;">Praktikum</b></span>
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="">
+  <div class="dropdown" id="bagianNilai">
+    <br><br><br><br><br><br>
+    <p><b style="font-size: 15px; margin-left: 360px">Praktikum</b></p>
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left: 450px; margin-top: -90px;">
       Pemrograman Berorientasi Objek (PBO)
     </button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -169,11 +168,11 @@
 
 
   <!-- ini bagian nilai -->
-  <div class="container" id="conGrafikNilai" style="margin-top: 40px;">
+  <div class="container" id="conGrafikNilai">
     <br><br>
-    <h4 style="margin-left: 70px;"><b>Grafik Nilai</b></h4>
+    <h4 style="margin-left: 390px"><b>Grafik Nilai</b></h4>
     <br>
-    <div id="resizable" style="height: 300px; width: 900px; margin: auto">
+    <div id="resizable" style="height: 270px; width: 800px; margin: auto">
       <div id="chartContainer1" style="height: 100%; width: 100%;"></div>
     </div>
   </div>
@@ -244,7 +243,7 @@
         </tbody>
       </table><br><br>
     </div>
-  </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  </div><br><br><br>
 
   <div class="area">
     <ul class="circles">
