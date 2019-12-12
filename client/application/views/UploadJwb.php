@@ -17,19 +17,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 
     <!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!-- <link rel="stylesheet" href="assets/css/UploadJwb.css"> -->    
     <link href="<?=base_url()?>assets/fontawesome/css/all.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/upload.css">
     <style>
         body{
-            background-color:#F3F2F2;
-            background-attachment: fixed !important;
-            background-sizecover;
-            font-family:'Roboto',sans-serif;
+        background-color:#F3F2F2;
+        background-attachment: fixed !important;
+        background-sizecover;
+        font-family:'Roboto',sans-serif;
         }
         .nav-pills{
         width: 342px;
+        margin-left:-80px;
         }
         .nav-item{
         width: 50%;
@@ -37,7 +38,7 @@
         .nav .nav-link{
         border-radius: 30px;
         height: 46px;
-        margin-top: 30px;
+        margin-top: 60px;
         }
         .nav-pills .nav-link{
         font-weight: bold;
@@ -51,12 +52,12 @@
         top:15px;
         }
         .new{
-            margin-left: 400px;
+            margin-left: 460px;
         }
-        .header{
-        position: fixed;
-        }
-        .user{
+        /* .header{
+        /* position: fixed; */
+        
+        /* .user{
         position: fixed;
         background: #353537;
         box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.15);
@@ -66,57 +67,62 @@
         float: right;
         margin-left: 1500px;
         margin-top: -40px;
-        }
+        } */
       .button{
-          width: 144px;
-          height: 40px;
+          width: 50px;
+          height: 60px;
           border-radius: 15px;
+         
         }
 
-      .btn-primary {
+        .btn-primary {
+        width: 150px;
+        height: 45px;
         color: #fff;
         background-color: #337ab7;
         border-color: #2e6da4;
         margin-left:300px;
-        margin-top: 40px;
+        margin-top: 30px;
         }
         .form{
             color: black ;
         }
         .box{
             background-color :  #fff;
-            width: 700px;
-            height: 689px;
+            width: 500px;
+            height: 600px;
             box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.15);
             border-radius: 30px;
             margin-top:70px;
         }
         .box-1{
           margin-top:60px;
-          margin-right: 150px;
+          margin-right: 100px;
+          
         }
         img{
-            width: 500px;
-            height:550px;  
+            width: 400px;
+            height: 480px;
         }
         .drpdwn{
           background: #1e1e1e;
           border-radius: 30px;
           float:right;
           font-family:'roboto',sans-serif;
-          margin-left:1550px;
+          margin-right:55px;
           margin-top:-50px;
           width: 200px;
           height: 48px;
         }
+        
         table{
             margin-top : 50px;
             margin-left:20px;
         }
         .row{
-            margin-right:50px;
+            margin-right:-55px;
             float:right;
-            margin-top:100px;
+            margin-top:50px;
         }
         p{
             position: absolute;
@@ -127,17 +133,19 @@
             font-family:roboto;
             font-style: normal;
             font-weight: bold;
-            font-size: 28px;
+            font-size: 20px;
             line-height: 28px;
 
             color: #2D2D2F;
         }
         .mk{
             margin-left:30px;
-            font-size: 20px;
+            font-size: 15px;
             font-style:bold;
             width: 280px;
             height: 40px;
+            margin-top:-60px;
+            
         }
         select{
             width: 230px;
@@ -174,10 +182,12 @@
              cursor: pointer;
          }
          label{
-             font-size:20px;
+             font-size:15px;
+             margin-top:10px;
          }
-         
-         
+         #indeks{
+             margin-top:2px;
+         }
 
   </style>
     <title>UploadJawaban</title>
@@ -209,7 +219,7 @@
         <div class="box">
             <div class="col align-self-center ">
                 <p>Form Upload Jawaban</p>
-            <font size="+2" ></font>
+            <font size="" ></font>
                 <br /><br />
             <form action="#">
             <!-- <form-container> -->
@@ -280,7 +290,5 @@
             </div>
         </div>
         </div>
-   
-    
 </body>
 </html>
