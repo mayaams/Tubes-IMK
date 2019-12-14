@@ -76,14 +76,44 @@ ul li b {
     position: fixed;
     width: 150px;
     height: 50px;
-    background: #FFFFFF;
+    background: #B3ADAD;
     box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.15);
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     left: 345px;
     top: 126px;
+    color: white;
+    padding-top: 12px;
+    z-index: 1;
+}
+
+#judulTab2 {
+    position: fixed;
+    width: 150px;
+    height: 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.15);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    left: 470px;
+    top: 126px;
     padding-top: 12px;
     z-index: 2;
+}
+
+#judulTab3 {
+    position: fixed;
+    width: 180px;
+    height: 50px;
+    background: #353537;
+    box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.15);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    left: 610px;
+    top: 126px;
+    color: white;
+    padding-top: 12px;
+    z-index: -1;
 }
 
 #containerSoal {
@@ -101,7 +131,7 @@ ul li b {
 #blockbox {
     position: fixed;
     width: 293px;
-    height: 60px;
+    height: 50px;
     left: 345px;
     top: 171px;
     z-index: 5;
@@ -112,11 +142,11 @@ ul li b {
     z-index: 6;
 }
 
-#next {
+#submit {
     width: 84.15px;
     height: 32px;
-    margin-left: 530px;
-    margin-top: 30px;
+    margin-left: 510px;
+    margin-top: 2px;
     background: #5088CA;
     border-radius: 15px;
     border: none;
@@ -175,12 +205,12 @@ p.sisaWaktu {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    width: 540px;
-    height: 35px;
-    top: 427px;
+    width: 200px;
+    height: 25px;
+    top: 390px;
     background: #F3F2F2;
     border-radius: 30px;
-    margin: auto;
+    margin-left: 50px;
     transition: all 0.5s ease;
 }
 
@@ -200,5 +230,49 @@ p.sisaWaktu {
 
 .textOpsi {
     padding-top: 5px;
+    font-size: 10px;
     padding-left: 40px;
+}
+
+.button1 {
+    border-radius: 50%;
+    position: fixed;
+    background-color: #495851;
+    border: none;
+    padding: 8px 8px;
+    margin-left: 655px;
+    margin-top: 190px;
+    z-index: 10;
+}
+
+.button2 {
+    border-radius: 50%;
+    position: fixed;
+    background-color: #C4C4C4;
+    border: none;
+    padding: 8px 8px;
+    margin-left: 685px;
+    margin-top: 190px;
+    z-index: 10;
+    transition-duration: 0.4s;
+}
+
+.button2:hover {
+    background-color: #495851;
+}
+
+.button3 {
+    border-radius: 50%;
+    position: fixed;
+    background-color: #C4C4C4;
+    border: none;
+    padding: 8px 8px;
+    margin-left: 715px;
+    margin-top: 190px;
+    z-index: 10;
+    transition-duration: 0.4s;
+}
+
+.button3:hover {
+    background-color: #495851;
 }
