@@ -31,14 +31,14 @@
       font-family: 'Roboto', sans-serif;
     }
     .margin-nav{
-      margin-left: 265px;
+      margin-left: 280px;
     }
     .container{
-      margin-left: 385px;
+      margin-left: 360px;
     }
     .container2{
-      margin-top: 140px;
       margin-left: 350px;
+      margin-top: -100px;
     }
     .txt-14{
       font-size: 12px;
@@ -91,6 +91,18 @@
       border-radius: 15px;
       margin-left: 840px;
     }
+    .buletatas{
+      margin-top: -65px;
+      margin-left: 730px;
+      width: 260px;
+      height: 280px;
+    }
+    .buletbawah{
+      margin-top: 90px;
+      margin-left: -310px;
+      height: 80px;
+      width: 1300px;
+    }
   </style>
   <body>
 
@@ -131,6 +143,7 @@
 
     <!-- ini content -->
     <div class="container">
+      <img class="buletatas" src="<?php echo base_url('/assets/image/buletatas.png'); ?>">
       <div class="container2 row mx-auto">
         <div class="col-5 mr-5">
           <div class="row mb-3">
@@ -159,6 +172,7 @@
           <img class="img-size" src="assets/image/man.png">
         </div>
       </div>
+      <img class="buletbawah" src="<?php echo base_url('/assets/image/buletbawah.png'); ?>">
     </div>
   </body>
 </html>
