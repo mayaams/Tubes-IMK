@@ -189,11 +189,10 @@
             </div>
             <div class="box-1" style="">
             <div class="col align-self-center">
-            <img src="assets/image/history.png" alt="Avatar" class="image" >
+            <img src="<?php echo base_url('/assets/image/history.png'); ?>" class="image" >  
             </div>
         </div>
       </div>
-
 </div>
             
    

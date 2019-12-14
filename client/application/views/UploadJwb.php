@@ -327,7 +327,7 @@
       </div>
       <div class="box-1" style="">
             <div class="col align-self-end">
-            <img src="assets/image/ATURAN.png" alt="Avatar" class="image" >
+            <img src="<?php echo base_url('/assets/image/ATURAN.png'); ?>" alt="Avatar" class="image" >
             </div>
         </div>
         </div>
