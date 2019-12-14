@@ -183,7 +183,7 @@
                 <a class="txt-18 font-weight-bold">WAKTU</a>
               </div>
               <div class="d-flex justify-content-center mb-2">
-                <img src="assets/image/line2.png" >
+                <img src="<?php echo base_url('/assets/image/line2.png'); ?>" >
               </div>
               <div class="d-flex justify-content-center">
                 <a class="txt-36 align-self-center">00:01:30<a>

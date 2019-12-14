@@ -151,7 +151,7 @@
               <a class="txt-50">Selamat Datang</a> <br>
               <a class="txt-36">Anasya Wulandari</a> <br>
             </div>
-            <img src="assets/image/line1.png" >
+            <img src="<?php echo base_url('/assets/image/line1.png'); ?>" >
           </div>
           <div class="row">
             <div class="ml-3 font-weight-bold">
@@ -169,7 +169,7 @@
           </div>
         </div>
         <div class=" ml-5">
-          <img class="img-size" src="assets/image/man.png">
+          <img class="img-size" src="<?php echo base_url('/assets/image/man.png'); ?>">
         </div>
       </div>
       <img class="buletbawah" src="<?php echo base_url('/assets/image/buletbawah.png'); ?>">
