@@ -141,7 +141,6 @@
     </button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
       <a class="dropdown-item" href="#">Logout</a>
-
     </div>
   </div>
 
