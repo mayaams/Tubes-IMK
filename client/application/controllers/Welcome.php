@@ -20,7 +20,7 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('v_MulaiPraktikum');
+		$this->load->view('feedbackAsprak');
 	}
 	public function jadwal()
 	{
@@ -33,5 +33,9 @@ class Welcome extends CI_Controller {
 	public function profil()
 	{
 		$this->load->view('profil');
+	}
+	public function dataiflab()
+	{
+		$this->load->view('dataiflab');
 	}
 }

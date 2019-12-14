@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Tes Awal</title>
+  <title>Tes Akhir</title>
 </head>
 
 <!-- Stylesheets -->
-<link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/soalTesAwal.css">
+<link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/soalTesAkhir.css">
 <link href="https://canvasjs.com/assets/css/jquery-ui.1.11.2.min.css" rel="stylesheet" />
 <link href="<?= base_url() ?>assets/fontawesome/css/all.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="/css/all.min">
@@ -64,25 +64,34 @@
   <div class="sisaWaktu">
     <center>
       <p style="padding-top: 5px">
-        <h6><b>SISA WAKTU</b></h6><hr>
-       <center> <p id="timestamp">00:10:58</p></center>
+        <h6><b>SISA WAKTU</b></h6>
+        <hr>
+        <center>
+          <p id="timestamp">00:24:39</p>
+        </center>
       </p>
     </center>
   </div>
 
   <div id="tesAwal">
     <center>
-      <p>Tes Awal</p>
+      <p>Tes Akhir</p>
     </center>
   </div>
 
   <div class="tabSoal">
     <center>
       <p id="judulTab"><b>Soal</b></p>
+      <p id="judulTab2"><b>Feedback</b></p>
+      <p id="judulTab3"><b>Upload Jawaban</b></p>
     </center>
 
     <div id="blockbox"></div>
-
+    <div class="buttons">
+      <button class="button button1"></button>
+      <button class="button button2"></button>
+      <button class="button button3"></button>
+    </div>
     <div id="containerSoal">
       <div id="navigation"><br><br>
         <center>
@@ -95,30 +104,15 @@
       <div class="quizSection"><br>
         <center>
           <h6>
-            <div id="soalQuiz">Berikut ini yang bukan merupakan access modifier adalah</div>
+            <div id="soalQuiz">Implementasikan Class Diagram tersebut dengan ketentuan:</div>
           </h6>
         </center><br>
-        <!-- ini jawaban -->
-        <div class="options">
-          <input type="radio" name="gender" value="male"><p class="textOpsi">Restricted</p><br>
-          <span class="checkmark"></span>
-        </div>
-        <div class="options" style="margin-top: 15px;">
-          <input type="radio" name="gender" value="male"><p class="textOpsi">Private<br>
-          <span class="checkmark"></span>
-        </div>
-        <div class="options" style="margin-top: 15px;">
-          <input type="radio" name="gender" value="male"><p class="textOpsi">Public<br>
-          <span class="checkmark"></span>
-        </div>
-        <div class="options" style="margin-top: 15px;">
-          <input type="radio" name="gender" value="male"><p class="textOpsi">Protected<br>
-          <span class="checkmark"></span>
-        </div>
+        <!-- ini image class -->
+        <center> <img style="width: 43%;" src="<?php echo base_url(); ?>/assets/image/soalj.png" alt=""></center>
         <!-- <button id="prev">Previous</button> -->
         <button id="next">Next</button>
         <!-- <button id="submit">Get Results</button> -->
-        <!-- <div id="results"></div> --> 
+        <!-- <div id="results"></div> -->
       </div>
     </div>
   </div>

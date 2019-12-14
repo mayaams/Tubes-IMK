@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Tes Awal</title>
+  <title>Tes Akhir</title>
 </head>
 
 <!-- Stylesheets -->
-<link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/soalTesAwal.css">
+<link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/feedbackAsprak.css">
 <link href="https://canvasjs.com/assets/css/jquery-ui.1.11.2.min.css" rel="stylesheet" />
 <link href="<?= base_url() ?>assets/fontawesome/css/all.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="/css/all.min">
@@ -64,61 +64,80 @@
   <div class="sisaWaktu">
     <center>
       <p style="padding-top: 5px">
-        <h6><b>SISA WAKTU</b></h6><hr>
-       <center> <p id="timestamp">00:10:58</p></center>
+        <h6><b>SISA WAKTU</b></h6>
+        <hr>
+        <center>
+          <p id="timestamp">00:05:21</p>
+        </center>
       </p>
     </center>
   </div>
 
   <div id="tesAwal">
     <center>
-      <p>Tes Awal</p>
+      <p>Tes Akhir</p>
     </center>
   </div>
 
   <div class="tabSoal">
     <center>
       <p id="judulTab"><b>Soal</b></p>
+      <p id="judulTab2"><b>Feedback</b></p>
+      <p id="judulTab3"><b>Upload Jawaban</b></p>
     </center>
 
     <div id="blockbox"></div>
-
     <div id="containerSoal">
       <div id="navigation"><br><br>
         <center>
-          <h6 style="padding-bottom: 3px;"><b>SOAL 1</b></h6>
+          <h6 style="padding-bottom: 3px;"><b>FEEDBACK ASISTEN PRAKTIKUM</b></h6>
         </center>
         <hr>
       </div>
 
       <!-- bagian kuis -->
       <div class="quizSection"><br>
-        <center>
-          <h6>
-            <div id="soalQuiz">Berikut ini yang bukan merupakan access modifier adalah</div>
-          </h6>
-        </center><br>
-        <!-- ini jawaban -->
-        <div class="options">
-          <input type="radio" name="gender" value="male"><p class="textOpsi">Restricted</p><br>
-          <span class="checkmark"></span>
+        <div style="margin-left: 50px; font-size: 12px;">Kinerja asisten praktikum saat praktikum berlangsung</div>
+        <br>
+        <!-- ini image class -->
+        <img style="position: fixed; border-radius: 50%; width:107px; margin-left: 500px; box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);" src="<?php echo base_url(); ?>/assets/image/profile-pic.jpg" alt="">
+        <div style="margin-top: -15px;">
+          <div class="options">
+            <input type="radio" name="gender" value="male">
+            <p class="textOpsi">Sangat Baik</p><br>
+            <span class="checkmark"></span>
+          </div>
+          <div class="options" style="margin-top: 5px;">
+            <input type="radio" name="gender" value="male">
+            <p class="textOpsi">Buruk<br>
+              <span class="checkmark"></span>
+          </div>
+          <div class="options" style="margin-top: 5px;">
+            <input type="radio" name="gender" value="male">
+            <p class="textOpsi">Cukup<br>
+              <span class="checkmark"></span>
+          </div>
+          <div class="options" style="margin-top: 5px;">
+            <input type="radio" name="gender" value="male">
+            <p class="textOpsi">Baik<br>
+              <span class="checkmark"></span>
+          </div>
+          <div class="options" style="margin-top: 5px;">
+            <input type="radio" name="gender" value="male">
+            <p class="textOpsi">Sangat Baik<br>
+              <span class="checkmark"></span>
+          </div>
         </div>
-        <div class="options" style="margin-top: 15px;">
-          <input type="radio" name="gender" value="male"><p class="textOpsi">Private<br>
-          <span class="checkmark"></span>
+
+        <div style="margin-left: 50px; font-size: 10px; margin-top: 30px;">
+          <form>
+            Kritik dan Saran<br>
+            <input style=" margin-top: 5px; border-radius: 15px; border: none; box-shadow: inset 2px 3px 20px rgba(0, 0, 0, 0.13); width: 300px; height: 50px;" type="text" name="kritik"><br>
+          </form>
         </div>
-        <div class="options" style="margin-top: 15px;">
-          <input type="radio" name="gender" value="male"><p class="textOpsi">Public<br>
-          <span class="checkmark"></span>
-        </div>
-        <div class="options" style="margin-top: 15px;">
-          <input type="radio" name="gender" value="male"><p class="textOpsi">Protected<br>
-          <span class="checkmark"></span>
-        </div>
-        <!-- <button id="prev">Previous</button> -->
-        <button id="next">Next</button>
-        <!-- <button id="submit">Get Results</button> -->
-        <!-- <div id="results"></div> --> 
+
+        <button id="submit">Submit</button>
+
       </div>
     </div>
   </div>
