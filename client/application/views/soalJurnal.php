@@ -36,6 +36,7 @@
     }
     .margin-nav{
       margin-left: 265px;
+      margin-bottom: 30px;
     }
     .card-data{
       width: 670px;
@@ -43,6 +44,7 @@
       background: #FFFFFF;
       border-radius: 30px;
       box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.15);
+      margin-top: -40px;
     }
     .card-waktu{
       width: 200px;
@@ -75,16 +77,18 @@
        border-radius: 15px;
      }
      .btn-b{
-       width: 78.15px;
-       height: 32px;
+       width: 130px;
+       height: 40px;
        background: white;
        border-radius: 15px;
+       position: absolute;
      }
      .btn-c{
        width: 140px;
-       height: 32px;
+       height: 40px;
        background:  #353537;
        border-radius: 15px;
+       margin-left: 110px;
      }
      .btn-info{
        width: 90px;
@@ -124,10 +128,17 @@
      .margin-5{
        margin-left: 80px;
      }
+     .white-box{
+       background: #FFFFFF;
+       width: 50px;
+       height: 50px;
+       margin-top: -10px;
+     }
+
   </style>
   <body>
     <!-- navbar start -->
-    <nav class="navbar navbar-expand-lg margin-nav mb-5 mt-3">
+    <nav class="navbar navbar-expand-lg margin-nav mt-3">
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
@@ -173,6 +184,9 @@
             <button type="button" class="btn-b txt-14 btn">Soal</button>
             <button type="button" class="btn-c text-white txt-14 btn">Upload Jawaban</button>
           </div>
+          <div class="white-box">
+
+          </div>
           <div class="card card-data txt-18 ">
             <div class="card-body mt-3 ml-5 mr-5">
               <div>
@@ -189,7 +203,7 @@
           </div>
         </div>
         <div class="ml-2">
-          <div class="ml-5">
+          <div class="ml-5 mt-3">
             <a class="ml-3 font-weight-bold">MODUL 4</a>
           </div>
           <div class="card card-waktu">
