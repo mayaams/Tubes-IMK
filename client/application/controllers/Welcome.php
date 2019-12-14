@@ -34,4 +34,8 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('profil');
 	}
+	public function dataiflab()
+	{
+		$this->load->view('dataiflab');
+	}
 }
