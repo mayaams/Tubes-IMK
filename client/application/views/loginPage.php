@@ -28,7 +28,7 @@
 <!-- stylesheet -->
 <style>
     body {
-        background: url(assets/image/backgroundLogin.png);
+        background: url(<?= base_url()?>/assets/image/backgroundLogin.png);
         background-repeat: no-repeat;
         background-size: auto;
         background-position: 0 -70px;
