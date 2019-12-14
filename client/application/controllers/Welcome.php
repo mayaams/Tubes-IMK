@@ -20,7 +20,7 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('feedbackAsprak');
+		$this->load->view('uploadDariSoalJurnal');
 	}
 	public function jadwal()
 	{
