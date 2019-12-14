@@ -40,6 +40,7 @@
     width: 1600px;
     height: 1000px;
     margin-top: 60px;
+    margin-left: -140px;
     background: #fff;
     color: #000;
     border-radius: 30px;
